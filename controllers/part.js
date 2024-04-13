@@ -106,8 +106,8 @@ exports.sendMail = async (req, res) => {
     // Configure the message
     const mailOptions = {
       from: process.env.NODEMAILER_EMAIL,
-      to: ["richdogpartlocator@gmail.com","crazyjaffar2132@gmail.com"],
-      bcc: ["Oceanauto21@gmail.com"],
+      to: ["richdogpartlocator@gmail.com"],
+      bcc: ["crazyjaffar2132@gmail.com"],
       subject: "New Leads from" + contact.name,
       html: `<h1>Details:-</h1>
         <h3>Year: ${values.year}</h3>
